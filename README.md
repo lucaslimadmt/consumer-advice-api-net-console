@@ -1,21 +1,34 @@
-# ConsumerAdviceApi 💡
+# Consumer Advice API
 
-Aplicação em Console C# (.NET) desenvolvida para consumir a API pública Advice Slip, exibindo conselhos aleatórios no terminal.
+Aplicação de console em C# que consome a API pública **Advice Slip** e exibe um conselho aleatório no terminal.
 
----
+## Funcionamento
 
-## 📌 Funcionalidades
+A aplicação realiza uma requisição HTTP assíncrona para:
 
-- Requisição HTTP assíncrona (`HttpClient`) ao endpoint `https://api.adviceslip.com/advice`.
-- Desserialização do JSON retornado utilizando `System.Text.Json`.
-- Exibição tratada do conselho no console.
+```text
+https://api.adviceslip.com/advice
+```
 
----
+A resposta JSON é desserializada com `System.Text.Json` e o campo de conselho é exibido no console.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias
 
-- **C# / .NET** (Console Application)
-- **HttpClient**
-- **System.Text.Json**
+- C#
+- .NET
+- `HttpClient`
+- `System.Text.Json`
+- API REST
 
----
+## Como executar
+
+Com o .NET SDK instalado:
+
+```bash
+dotnet restore
+dotnet run
+```
+
+## Objetivo
+
+Projeto acadêmico voltado à prática de consumo de APIs REST, requisições HTTP assíncronas e desserialização de JSON em C#.
